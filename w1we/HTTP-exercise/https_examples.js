@@ -1,9 +1,9 @@
 var https = require('https');
 
-var options = {
-  host: 'www.example.org',
-  path: '/'
-};
+// var options = {
+//   host: 'www.example.org',
+//   path: '/'
+// };
 
 // called by https when the request is made.
 // V1 CB
@@ -11,6 +11,11 @@ var options = {
 //   console.log('In response handler callback!');
 //   console.log('Response: ', response);
 // }
+
+var options = {
+  host: 'stream-large-file.herokuapp.com',
+  path: '/give-me-stuff-now'
+};
 
 var callback = function(response) {
   console.log('In response handler callback!');
